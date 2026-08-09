@@ -39,8 +39,8 @@ PC installed with SCILAB
 <br>title('Inverse FFT OF X(K)');
 
 <br>
-**CALCULATIONS:**
-<br> <img width="820" height="1339" alt="image" src="https://github.com/user-attachments/assets/e5d3ad7b-4867-47f7-96d8-70e124f5d6d5" />
+**CALCULATIONS:
+**<br> <img width="820" height="1339" alt="image" src="https://github.com/user-attachments/assets/e5d3ad7b-4867-47f7-96d8-70e124f5d6d5" />
 
 
 **SAMPLE OUTPUT:**
