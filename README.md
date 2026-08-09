@@ -55,30 +55,3 @@ Thus,  DFT using FFT-ALGORITHM for two given sequences were performed and its re
 
 
 
-
-
-<br>subplot(2,2,1);
-<br>xlabel('Time n');
-<br>ylabel('Amplitude');
-<br>title('Input Sequence');
-<br>Xk = fft(xn); 
-<br>K1=0:1:length(Xk)-1;
-<br>magnitude=abs(Xk)
-<br>subplot(2,2,2);
-<br>plot2d3(K1,magnitude);
-<br>xlabel('frequency(Hz)');
-<br>ylabel('magnitude(gain)');
-<br>title('magnitude spectrum');
-<br>angle = atan(imag(Xk),real(Xk))
-<br>subplot(2,2,3);
-<br>plot2d3(K1,angle);
-<br>xlabel('frequency(Hz)');
-<br>ylabel('Phase');
-<br>title('Phase spectrum')
-<br>y= ifft(Xk)
-<br>n2=0:1:length(y)-1;
-<br>subplot(2,2,4)
-<br>plot2d3(n2,y)
-<br>xlabel('Time n');
-<br>ylabel('Amplitude');
-<br>title('Inverse FFT OF X(K)');
