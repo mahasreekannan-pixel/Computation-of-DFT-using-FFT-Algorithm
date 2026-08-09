@@ -53,3 +53,43 @@ PC installed with SCILAB
 ## RESULT:
 Thus,  DFT using FFT-ALGORITHM for two given sequences were performed and its result was verified.
 
+
+
+
+## AIM
+To perform and verify DFT using FFT-ALGORITHM by SCILAB.
+## APPARATUS REQUIRED
+PC installed with SCILAB
+## PROGRAM 
+### DFT FFT-ALGORITHM
+<br>clear;
+<br>clc;
+<br>close;
+<br>xn = [1 2 3 4 4 3 2 1]
+<br>n1=0:1:length(xn)-1;
+<br>subplot(2,2,1);
+<br>plot2d3(n1,xn);
+<br>xlabel('Time n');
+<br>ylabel('Amplitude');
+<br>title('Input Sequence');
+<br>Xk = fft(xn); 
+<br>K1=0:1:length(Xk)-1;
+<br>magnitude=abs(Xk)
+<br>subplot(2,2,2);
+<br>plot2d3(K1,magnitude);
+<br>xlabel('frequency(Hz)');
+<br>ylabel('magnitude(gain)');
+<br>title('magnitude spectrum');
+<br>angle = atan(imag(Xk),real(Xk))
+<br>subplot(2,2,3);
+<br>plot2d3(K1,angle);
+<br>xlabel('frequency(Hz)');
+<br>ylabel('Phase');
+<br>title('Phase spectrum')
+<br>y= ifft(Xk)
+<br>n2=0:1:length(y)-1;
+<br>subplot(2,2,4)
+<br>plot2d3(n2,y)
+<br>xlabel('Time n');
+<br>ylabel('Amplitude');
+<br>title('Inverse FFT OF X(K)');
