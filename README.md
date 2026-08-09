@@ -56,16 +56,7 @@ Thus,  DFT using FFT-ALGORITHM for two given sequences were performed and its re
 
 
 
-## AIM
-To perform and verify DFT using FFT-ALGORITHM by SCILAB.
-## APPARATUS REQUIRED
-PC installed with SCILAB
-## PROGRAM 
-### DFT FFT-ALGORITHM
-<br>clear;
-<br>clc;
-<br>close;
-<br>xn = [1 2 3 4 4 3 2 1]
+
 <br>n1=0:1:length(xn)-1;
 <br>subplot(2,2,1);
 <br>plot2d3(n1,xn);
