@@ -57,9 +57,7 @@ Thus,  DFT using FFT-ALGORITHM for two given sequences were performed and its re
 
 
 
-<br>n1=0:1:length(xn)-1;
 <br>subplot(2,2,1);
-<br>plot2d3(n1,xn);
 <br>xlabel('Time n');
 <br>ylabel('Amplitude');
 <br>title('Input Sequence');
